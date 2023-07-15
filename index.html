@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meu portifolio</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="icon" href="img/icon.png" style=" width: 16px; height: 16px;">
+	<script src="https://kit.fontawesome.com/9617228131.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body id="top">
+	<section class="wrapper">
+		<div id="stars"></div>
+		<div id="stars2"></div>
+		<div id="stars3"></div>
+	</section>
+	<header>
+		<div id="contResp" class="containerH1">
+			<h1 class="animate">Desenvolvedor Front End</h1>
+		</div>
+	</header>
+	<section>
+		<div class="containerH2">
+			<h2 class="animate h2Resp">Olá, meu nome é Brendo sou desenvolvedor front end com foco na criação de sites e aplicativos mobile.</h2>
+		</div>
+		<div class="contBotoes animate">
+			<a class="btnHab" href="#myHabili">Habilidades</a>
+			<a class="btnProject" href="#myProject">Projetos</a>
+			<a class="btnSobre" href="#sobreMim">Sobre mim</a>
+			<a class="btnContact" href="#myContact">Contato</a>
+		</div>
+	</section>
+	<section id="myHabili" class="habili">
+		<h2 class="tituloHabili animate">Habilidades</h2>
+		<span class="spanHabili animate">Clique em uma das habilidades</span>
+		<div class="contHabili">
+			<div class="html animate ">
+				<h3 onclick="addHtml()">HTML</h3>
+				<button id="html" onclick="addHtml()"><i class="fa-brands fa-html5"></i></button>
+			</div>
+			<div class="css animate ">
+				<h3 onclick="addCss()">CSS</h3>
+				<button id="css" onclick="addCss()"><i class="fa-brands fa-css3-alt"></i></button>
+			</div>
+			<div class="bootstrap animate ">
+				<h3 onclick="addBoot()">Bootstrap</h3>
+				<button id="boot" onclick="addBoot()"><i class="fa-brands fa-bootstrap"></i></button>
+			</div>
+			<div class="javascript animate ">
+				<h3 onclick="addJs()">JavaScript</h3>
+				<button id="js" onclick="addJs()"><i class="fa-brands fa-square-js"></i></button>
+			</div>
+			<section id="exibirConteudo" class="animate">
+				<div class="contHtml sumir animate">
+					<h3 class="h3Html">HTML</h3>
+					<p>Conhecimento abrangente em HTML, tudo o que um site bem estruturado e organizado precisa.</p>
+					<p>Sites com ótima acessibilidade graças ao bom uso da semantica contida nos meus códigos, com facilidade de entendimento para os robores de busca e com chances de ter uma boa classificação nos resultados de pesquisas.</p>
+				</div>
+				
+				<div class="contCss sumir animate">
+					<h3 class="h3Css">CSS</h3>
+					<p>Conhecimentos avançados em CSS, sites com efeitos de animação simples e estilos muito bem trabalhados para oferecer uma experiência agradável para o usuário.</p>
+					<p>Sites 100% responsivos e adaptados para diferentes resoluções de tela como: celulares, tablets, notebooks e etc...</p>
+				</div>
+				
+				<div class="contBoot sumir animate">
+					<h3 class="h3Boot">BOOTSTRAP</h3>
+					<p>Conhecimentos basicos em Bootstrap, facilidade na criação de formulários, cards, barras de navegação e etc...</p>
+					<p>Experiência na criação de sites rapidos e simples utilizando Bootstrap 5 como: lojas, formulários de cadastro com validação, e landing pages modernas.</p>
+				</div>
+				
+				<div class="contJs sumir animate">
+					<h3 class="h3Js">JAVASCRIPT</h3>
+					<p>Atualmente me aprofundando nos estudos em JavaScript, me considero iniciante com conhecimentos bem básicos.</p>
+					<p>Manipulação de dados simples utilizando if/else e loopings, atribuição de condições que façam um elemento sumir ou aparecer na tela caso um botão seja precionado e entre outras condições simples... <strong>( Ainda estudando esta área )</strong></p>
+				</div>
+			</section>
+			
+		</div>
+	</section>
+	<section id="myProject">
+				<h2 class="animate">Meus projetos</h2>
+				<span class="spanHabili animate">Em breve novos projetos serão adicionados aqui</span>
+				<div class="containerProject animate">
+					<div class="corpoProject animate">
+						<div class="contProject animate">
+							<h4>Em breve...</h4>
+							<div class="loader">
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="corpoProject animate">
+						<div class="contProject animate">
+							<h4>Em breve...</h4>
+							<div class="loader">
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="corpoProject animate">
+						<div class="contProject animate">
+							<h4>Em breve...</h4>
+							<div class="loader">
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							  <div class="dot"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</section>
+	<section id="sobreMim">
+		<h2 class="animate">Sobre mim</h2>
+		<div class="containerSobre animate">
+			<div>
+				<h3>Quem sou eu</h3>
+				<div class="corpoSobre animate">
+					<div class="contSobre animate">
+						<p>Me chamo Brendo Sena tenho 20 anos e iniciei meus estudos na área da programação por volta de março de 2023. Atualmente meus estudos estão totalmente direcionados ao desenvolvimento web, mas meu intuito é não apenas desenvolver sites mas também tenho interesse em desenvolver aplicações.</p><br>
+						<p>Inicialmente eu comecei estudando python na area do Backend, porém com o decorrer do tempo eu resolvi partir para o Frontend já que meu objetivo inicial sempre foi aprender a desenvolver sites.</p>		
+					</div>
+				</div>
+			</div>
+			<div>
+				<h3>Objetivos</h3>
+				<div class="corpoSobre animate">
+					<div class="contSobre animate">
+						<p>Meu principal objetivo é me tornar um desenvolvedor Fullstack. Por mais que eu goste bastante de trabalhar na parte visual eu entendo que o conhecimento em Backend vai ser importante para a evolução dos meus projetos e também para o mercado de trabalho.</p><br>
+						<p>Atualmente estou em busca da minha primeira experiência profissional como desenvolvedor.</p>	
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<h3>Educação e formação</h3>
+				<div class="corpoSobre animate">
+					<div class="contSobre animate">
+						<p>Graças a quantidade enorme de informações e conteudos pela internet hoje eu consigo estudar de maneira gratuita através de sites explicativos, cursos gratuitos, tutoriais e etc...</p>
+						<p>Atualmente estou trabalhando em projetos pessoais que na medida que estiverem concluidos eu irei adicionando-os ao meu portifólio.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="myContact">
+		<h2 class="tituloHabili animate">Entre em contato</h2>
+		<span class="spanHabili animate">Clique no icone de sua preferência para entrar em contato</span>
+		<div class="contHabili">
+			<div class="html animate ">
+				<h3><a href="https://api.whatsapp.com/send?phone=5521967047679" target="_blank">Whatsap</a></h3>
+				<a href="https://api.whatsapp.com/send?phone=5521967047679" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+			</div>
+			<div class="css animate ">
+				<h3><a href="https://www.linkedin.com/in/brendo-sena-630477228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG%2Fp%2FBlcwTAKXhYIgxpGBwA%3D%3D"target="_blank">Linkedin</a></h3>
+				<a href="https://www.linkedin.com/in/brendo-sena-630477228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG%2Fp%2FBlcwTAKXhYIgxpGBwA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+			<div class="bootstrap animate ">
+				<h3><a href="https://github.com/BrendoSena" target="_blank">GitHub</a></h3>
+				<a href="https://github.com/BrendoSena" target="_blank"><i class="fa-brands fa-github"></i></a>
+			</div>
+	</section>
+	<footer>
+		<div class="containerFooter">
+			<div class="contFooter">
+				<a href="#myHabili">Habilidades</a>
+				<a href="#myProject">Projetos</a>
+				<a href="#sobreMim">Sobre mim</a>
+				<a href="#myContact">Contato</a>
+			</div>
+		</div>
+		<h5>&copy Brendo Sena 2023 todos os direitos reservados.</h5>
+	</footer>
+<a id="voltarTopo" href="#top">
+	 <i class="fas fa-arrow-up"></i>
+</a>
+<script src="controle.js"></script>
+</body>
+</html>
