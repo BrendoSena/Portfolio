@@ -125,7 +125,7 @@ function scrollFunction() {
 
 // função transição suave
 
-$(".btnHab, .btnProject, .btnContact, #voltarTopo").on("click", function (event) {
+$(".btnHab, .btnProject, .btnContact, #voltarTopo, .contFooter a").on("click", function (event) {
     if (this.hash !== "") {
         event.preventDefault();
 
